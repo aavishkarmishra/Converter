@@ -1,3 +1,13 @@
 textarea {
   font-size: 5rem !important;
 }
+.buttons {
+  max-width: 100px;
+}
+.swap {
+  margin: 5px;
+}
+
+body {
+  padding-top: 25px;
+}

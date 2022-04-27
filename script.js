@@ -1,3 +1,4 @@
+'use strict';
 function submit() {
   var inputFormat = parseInt(document.getElementById('inputFormat').value);
   var outputFormat = parseInt(document.getElementById('outputFormat').value);
@@ -10,6 +11,13 @@ function submit() {
   }
 
   document.getElementById('output').value = ouptut;
+}
+
+function swap() {
+  var inputFormat = document.getElementById('inputFormat').value;
+  var outputFormat = document.getElementById('outputFormat').value;
+  document.getElementById('inputFormat').value = outputFormat;
+  document.getElementById('outputFormat').value = inputFormat;
 }
 
 function format(input, inputFormat, outputFormat) {

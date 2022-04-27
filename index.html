@@ -12,8 +12,8 @@
   <body>
     <div class="container">
       <h1 style="text-align: center">Converter</h1>
-      <div class="container">
-        <div class="input">
+      <div class="container row align-items-center">
+        <div class="input col">
           <h3 class="label">From</h3>
           <select class="form-select col select" id="inputFormat" aria-label="Default select example">
             <option value="4" selected>Hexadecimal</option>
@@ -25,7 +25,12 @@
             <textarea class="form-control" id="input" rows="2"></textarea>
           </div>
         </div>
-        <div class="output">
+        <div class="col buttons">
+          <button type="button" onclick="swap()" class="btn btn-primary swap">Swap</button>
+          <button type="button" onclick="submit()" class="btn btn-primary submit">Submit</button>
+        </div>
+
+        <div class="output col">
           <h3 class="label">To</h3>
           <select class="form-select col select" id="outputFormat" aria-label="Default select example">
             <option value="4">Hexadecimal</option>
@@ -37,7 +42,6 @@
             <textarea class="form-control" id="output" rows="2" readonly></textarea>
           </div>
         </div>
-        <button type="button" onclick="submit()" class="btn btn-primary submit">Submit</button>
       </div>
     </div>
 
