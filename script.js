@@ -3,14 +3,16 @@ function submit() {
   var inputFormat = parseInt(document.getElementById('inputFormat').value);
   var outputFormat = parseInt(document.getElementById('outputFormat').value);
   var input = document.getElementById('input').value;
-  var ouptut;
-  if (inputFormat == outputFormat) {
+  var output;
+  if (input == '') {
+    output = 'Input Required';
+  } else if (inputFormat == outputFormat) {
     ouptut = input;
   } else {
-    ouptut = format(input, inputFormat, outputFormat);
+    output = format(input, inputFormat, outputFormat);
   }
 
-  document.getElementById('output').value = ouptut;
+  document.getElementById('output').value = output;
 }
 
 function swap() {
